@@ -76,7 +76,7 @@ const TitleChecker: React.FC = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               Instantly check if your title is one of a kind or too close to the
-              existing 16,000. Stay original, always.
+              existing 12,000. Stay original, always.
             </motion.p>
           </motion.div>
         </div>
@@ -151,7 +151,7 @@ const TitleChecker: React.FC = () => {
                 {result.top_matches.map((match, index) => (
                   <motion.div
                     key={index}
-                    className="p-4 w-160 bg-white/5 backdrop-blur-md border border-gray-700 rounded-xl shadow-md hover:shadow-pink-500/20 transition duration-300 "
+                    className="p-4 md:w-160 w-80 bg-white/5 backdrop-blur-md border border-gray-700 rounded-xl shadow-md hover:shadow-pink-500/20 transition duration-300 "
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
